@@ -42,8 +42,3 @@
 </body>
 
 </html>
-
-![PacMan1](https://user-images.githubusercontent.com/120128966/216724026-56095606-fcd2-4f5e-ab5b-598a6a6a8aba.png)
-![PacMan2](https://user-images.githubusercontent.com/120128966/216724042-70086d83-d5d0-4acb-b494-7a1c59c5c9a9.png)
-![PacMan3](https://user-images.githubusercontent.com/120128966/216724053-e892d873-a1b9-477f-aa21-4808d8941b2f.png)
-![PacMan4](https://user-images.githubusercontent.com/120128966/216724060-9229b059-b046-4652-8bec-984012e42c3a.png)
