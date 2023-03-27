@@ -1,0 +1,27 @@
+body {
+    background-color: #DEB887;
+}
+
+h1 {
+   color: #A52A2A; 
+   font-family: 'Montserrat', sans-serif;
+   font-size: 24px;
+}
+
+h2 {
+    color: #800000;
+    font-family: 'Montserrat', sans-serif; bold;
+    font-size: 36px;
+}
+
+h3 {
+    color: #800000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.nav-bar {
+    font-family: 'Montserrat', sans-serif;
+    color: #A52A2A;
+    list-style: none;
+}
