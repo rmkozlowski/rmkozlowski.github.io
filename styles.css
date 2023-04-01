@@ -35,12 +35,10 @@ h3 {
 p {
   color: #1a1831;
   font-family:'Montserrat', sans-serif;
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 200px;
-  max-width: 50%;
+  font-size: 16px;
+  position: relative;
+  top: 115px;
+  left: 0px;
 }
 
 .topnav {
@@ -93,7 +91,6 @@ p {
   
 
   #video {
-    background:#1a1831;
     grid-area: video;
     padding: .2rem;
   }
@@ -116,15 +113,17 @@ p {
   }
 
   svg {
-    color: white;
+    color:#1a1831;
     gap:.1rem;
     height: 2rem;
   }
 
+  
+
 @media ony screen and (max-width:550px) {
   .container{
     grid-template-columns:1fr;
-    grid-template-rows: 0.4fr 1fr .5fr 2fr 0.4fr;
+    grid-template-rows: 0.4fr 2fr 1fr 1fr 0.4fr;
     grid-template-areas:
     "nav"
     "main"
@@ -133,3 +132,4 @@ p {
     "footer"
   }
 }
+
