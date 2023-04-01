@@ -28,7 +28,6 @@ h3 {
     font-size: 30px;
     grid-area: main;
     position: absolute;
-    left: 100px;
     top: 125px;
 }
 
@@ -132,4 +131,3 @@ p {
     "footer"
   }
 }
-
