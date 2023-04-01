@@ -21,7 +21,7 @@ p {
     display: grid;
     height:100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr .4fr 3.5fr .5fr;
+    grid-template-rows: .5fr 1fr .4fr 2fr .5fr;
     gap: 10px;
     grid-template-areas:
     "nav nav nav"
