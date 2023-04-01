@@ -1,27 +1,135 @@
 body {
-    background-color: #DEB887;
+  background-color: #dece9c;
 }
 
 h1 {
-   color: #A52A2A; 
+   color: #1a1831; 
    font-family: 'Montserrat', sans-serif;
-   font-size: 24px;
+   font-size: 36px;
+   grid-area: main;
+   position: absolute;
+   left: 0x;
+   top: 40px;
 }
 
 h2 {
-    color: #800000;
-    font-family: 'Montserrat', sans-serif; bold;
-    font-size: 36px;
+    color: #1a1831; 
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 56px;
+    grid-area: main; 
+    position: absolute;
+    left: 0px;
+    top: 50px;
 }
 
 h3 {
-    color: #800000;
+    color: #1a1831; 
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
+    grid-area: main;
+    position: absolute;
+    left: 100px;
+    top: 125px;
 }
 
-.nav-bar {
-    font-family: 'Montserrat', sans-serif;
-    color: #A52A2A;
-    list-style: none;
+p {
+  color: #1a1831;
+  font-family:'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 200px;
+  max-width: 50%;
+}
+
+.topnav {
+    background-color: #20615b;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif; 
+    grid-area: nav;
+    width: 100%; 
+  } 
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    grid-area: nav;
+  }
+  
+  .topnav a:hover {
+    background-color: #dece9c;
+    color: white;
+    grid-area: nav;
+  }
+  
+  .topnav a.active {
+    background-color: #1a1831; 
+    color: white;
+    grid-area: nav;
+  }
+
+  .container {
+    display:grid;
+    height:100vh;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: .5fr 45fr 2fr .5fr;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      'nav nav'
+      'main image'
+      'video image' 
+      'footer footer'
+  }
+
+  nav {
+    background-color:#20615b;
+    grid-area: nav;
+  }
+  
+
+  #video {
+    background:#1a1831;
+    grid-area: video;
+    padding: .2rem;
+  }
+
+  
+  #image {
+    background: url(rmkprofilepic.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: image;
+    padding: 3rem; 
+  }
+
+  footer {
+    background: #1a1831;
+    grid-area:footer;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-size: 8px; 
+  }
+
+  svg {
+    color: white;
+    gap:.1rem;
+    height: 2rem;
+  }
+
+@media ony screen and (max-width:550px) {
+  .container{
+    grid-template-columns:1fr;
+    grid-template-rows: 0.4fr 1fr .5fr 2fr 0.4fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "image"
+    "video"
+    "footer"
+  }
 }
