@@ -21,19 +21,22 @@ p {
     display: grid;
     height:100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr .4fr 2fr .5fr;
+    grid-template-rows: 2fr 1fr .2fr 1fr .2fr 1fr .5fr;
     gap: 10px;
     grid-template-areas:
     "nav nav nav"
     "main main main"
     "project1 project2 project3"
     "blurb1 blurb2 blurb3"
+    "project4 project5 project6"
+    "blurb4 blurb5 blurb6"
     "footer footer footer"
 }
 
 nav {
     background-color: #20615b;
     grid-area: nav;
+    padding: 1rem;
 }
 
 main {
@@ -49,7 +52,7 @@ main {
     background-image: url('pacimage.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 7rem;
+    padding: 5rem;
 }
 
 #project2 {
@@ -57,7 +60,7 @@ main {
     grid-area: project2;
     background-size: cover;
     background-position: center;
-    padding: 7rem;
+    padding: 5rem;
 }
 
 #project3 {
@@ -65,7 +68,31 @@ main {
     grid-area: project3;
     background-size: cover;
     background-position: center;
-    padding: 7rem;
+    padding: 5rem;
+}
+
+#project4 {
+    grid-area: project4;
+    background-image: url('tictactoeboard.png');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+}
+
+#project5 {
+    grid-area: project5;
+    background-image: url("Screen\ Shot\ 2023-07-14\ at\ 5.48.38\ PM.png");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+}
+
+#project6 {
+    grid-area: project6;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
 }
 
 #blurb1 {
@@ -88,6 +115,33 @@ main {
 
 #blurb3 {
     grid-area: blurb3;
+    border-style: solid;
+    background-color: #dece9c;
+    color: #1a1831;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#blurb4 {
+    grid-area: blurb4;
+    border-style: solid;
+    background-color: #dece9c;
+    color: #1a1831;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#blurb5 {
+    grid-area: blurb5;
+    border-style: solid;
+    background-color: #dece9c;
+    color: #1a1831;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#blurb6 {
+    grid-area: blurb6;
     border-style: solid;
     background-color: #dece9c;
     color: #1a1831;
@@ -123,7 +177,7 @@ footer {
   .topnav a:hover {
     background-color: #dece9c;
     color: white;
-    grid-area: ;
+    grid-area: nav;
   }
   
   .topnav a.active {
