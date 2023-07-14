@@ -9,7 +9,7 @@ h1 {
    grid-area: main;
    position: absolute;
    left: 0x;
-   top: 40px;
+   top: 45px;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
     grid-area: main; 
     position: absolute;
     left: 0px;
-    top: 50px;
+    top: 55px;
 }
 
 h3 {
@@ -28,7 +28,7 @@ h3 {
     font-size: 30px;
     grid-area: main;
     position: absolute;
-    top: 125px;
+    top: 130px;
 }
 
 p {
@@ -72,16 +72,16 @@ p {
     grid-area: nav;
   }
 
+
   .container {
     display:grid;
     height:100vh;
     grid-template-columns:1fr 1fr;
-    grid-template-rows: .5fr 20fr 2fr .5fr;
+    grid-template-rows: .5fr 3fr .5fr;
     grid-gap: 0.5rem;
     grid-template-areas:
       'nav nav'
       'main image'
-      'video image' 
       'footer footer'
   }
 
@@ -91,18 +91,22 @@ p {
   }
   
 
-  #video {
-    grid-area: video;
-    padding: .2rem;
+  .image {
+    background: url(rmkprofilepic.jpg);
+    background-position: right;
+    grid-area: image;
+    padding: 2rem; 
+    position: fixed;
   }
 
-  
-  #image {
-    background: url(rmkprofilepic.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: image;
-    padding: 3rem; 
+  .contactInfo {
+    color: white;
+    background-color: #1a1831;
+    float: left;
+    text-align: center;
+    grid-area: footer;
+    padding: 10px;
+    width: 20%;
   }
 
   footer {
@@ -111,25 +115,11 @@ p {
     color: white;
     font-family:'Montserrat', sans-serif;
     font-size: 8px; 
+    float: left;
+    text-align: center;
   }
 
   svg {
-    color:#1a1831;
-    gap:.1rem;
-    height: 2rem;
+    color: white;
+    padding: 40 px;
   }
-
-  
-
-@media ony screen and (max-width:550px) {
-  .container{
-    grid-template-columns:1fr;
-    grid-template-rows: 0.2 2fr 1fr 1fr 0.2fr;
-    grid-template-areas:
-    "nav"
-    "main"
-    "image"
-    "video"
-    "footer"
-  }
-}
